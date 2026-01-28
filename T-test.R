@@ -13,10 +13,20 @@ lines(density(y), col='blue')
 # Add a title to this plot, title name should be "T Test"
 # Add labels to X and Y axis, and label names should be, for X add "Sequence", Y add "Density of X and Y"
 # Create a dashed line instead of a continous line
-
+T-test
 plot(pts,dt(pts,df=9),col='red',type='l', main="T Test", xlab="Sequence", ylab="Density of X and Y", lty=2)
 lines(density(x), col='green')
 lines(density(y), col='blue')
+
+# Adjust scale of Y axis such that it fits all the curves on plot
+
+plot(pts,dt(pts,df=9),col='red',type='l', main="T Test", xlab="Sequence", ylab="Density of X and Y", lty=2, ylim=c(0,0.8))
+lines(density(x), col='green')
+lines(density(y), col='blue')
+
+
+library(ggplot2)
+
 
 
 
