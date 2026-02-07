@@ -31,6 +31,16 @@ sample estimates:
 
 
 
+# Set the working directory
+
+setwd("/Users/pawar/Desktop")
+
+# Read data.csv file in R
+
+data <- read.csv("data.csv", header = TRUE)
+
+
+
 
 
 
